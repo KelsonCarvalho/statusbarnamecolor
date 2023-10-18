@@ -7,3 +7,4 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 
 - Initial release
+- Update release V 0.1.1
