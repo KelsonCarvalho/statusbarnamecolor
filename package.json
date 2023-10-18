@@ -2,7 +2,7 @@
   "name": "vscode-status-bar-name-color",
   "displayName": "status Bar Name Color",
   "description": "Personalize seu VS Code StatuBar",
-  "icon": "img/icon.png",
+  "icon": "icon.jpg",
   "version": "0.0.1",
   "publisher": "kelsoncarvalho",
   "author": {
