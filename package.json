@@ -1,23 +1,75 @@
 {
-  "name": "statusbarnamecolor",
-  "displayName": "StatusBarNameColor",
-  "description": "",
+  "name": "vscode-status-bar-name-color",
+  "displayName": "status Bar Name Color",
+  "description": "Personalize seu VS Code StatuBar",
+  "icon": "img/icon.png",
   "version": "0.0.1",
+  "publisher": "kelsoncarvalho",
+  "author": {
+    "name": "Kelson Carvalho",
+    "email": "fabriciosouuuza@gmail.com"
+  },
   "engines": {
     "vscode": "^1.83.0"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/NoslekCode/statusbarnamecolor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NoslekCode/statusbarnamecolor.git"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "keywords": [
+    "status",
+    "StatuBar",
+    "item",
+    "custom",
+    "Personalize",
+    "customizer",
+    "personal"
+  ],
+  "activationEvents": [
+    "*"
+  ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "statusbarnamecolor.helloWorld",
-        "title": "Hello World"
+    "configuration": {
+      "title": "Item personalizado da barra de status.",
+      "properties": {
+        "statusBarCustomItem.text": {
+          "type": "string",
+          "default": "Kelson Carvalho",
+          "description": "Item personalizado (pode ser seu nome)."
+        },
+        "statusBarCustomItem.tooltip": {
+          "type": "string",
+          "default": "Este código do Visual Studio pertence a Kelson carvalho.",
+          "description": "Texto de dica de item personalizado."
+        },
+        "statusBarCustomItem.icon": {
+          "type": "string",
+          "default": "🔥",
+          "description": "Ícone de item personalizado."
+        },
+        "statusBarCustomColor.primaryBkColor": {
+          "type": "string",
+          "default": "#2E3D5A",
+          "description": "Cor de fundo da barra de status."
+        },
+        "statusBarCustomColor.secondaryBkColor": {
+          "type": "string",
+          "default": "#EC3236",
+          "description": "Sem pasta e cor de fundo de depuração."
+        },
+        "statusBarCustomColor.foreground": {
+          "type": "string",
+          "default": "#FFFFFF",
+          "description": "Cor do primeiro plano (texto)."
+        }
       }
-    ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
